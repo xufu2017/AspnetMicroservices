@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 namespace Catalog.API.Controllers
 {
     [ApiController]
+    [Route("api/v1/[controller]")]
     public class CatalogController:ControllerBase
     {
         private readonly IProductRepository _repository;
